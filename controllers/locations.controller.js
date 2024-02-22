@@ -17,5 +17,4 @@ locations.get('/:id', (req, res) => {
     }
   })
   
-
 module.exports = locations
