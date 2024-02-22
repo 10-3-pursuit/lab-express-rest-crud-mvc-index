@@ -12,6 +12,7 @@ locations.get('/', (req, res) => {
 locations.get('/people', (req, res) => {
     const newArray = locationsArray.map((location) => {
         const newLocationObject = {...location}
+        
         const matchingPeople = personsArray.filter((person) => {
             return person.mainLocation === location.zip
         })
