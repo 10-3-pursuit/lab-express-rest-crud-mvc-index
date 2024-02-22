@@ -16,7 +16,7 @@ module.exports = [
       location: 11101,
     },
     {
-      id:3
+      id:3,
       brand: "Bowflex",
       model: "Bowflexer 4000",
       type: "Extreme Fitness Bench",

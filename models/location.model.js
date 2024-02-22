@@ -1,11 +1,13 @@
 module.exports = [
     {
+      id: 1,
       street: "45 Davis Street",
       city: "Long Island City",
       state: "NY",
       zip: "11101",
     },
     {
+      id: 2,
       street: "23 Broadway",
       city: "New York",
       state: "NY",
