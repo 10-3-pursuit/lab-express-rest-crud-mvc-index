@@ -1,6 +1,6 @@
 const express = require('express')
 const locations = express.Router()
-const locationsArr = require("../models/location.model");
+const locationsArr = require("../models/locations.model");
 
 locations.get('/', (req, res) => {
     res.json({locations: locationsArr})
