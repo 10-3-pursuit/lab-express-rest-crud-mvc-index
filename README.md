@@ -16,6 +16,7 @@ Your job will be to be to begin building a custom app that keeps track of numero
    npm install
    ```
 
+1. Create a server as you have done previously in class.
 1. Open up the repository in VSCode. Follow the instructions below to complete the Lab.
 
 ## Instructions
@@ -71,17 +72,13 @@ For each model, make a folder with the appropriate file name. For example, for t
 ```js
 [
   {
+    id: 1,
     street: "45 Davis Street",
     city: "Long Island City",
     state: "NY",
     zip: "11101",
   },
-  {
-    street: "23 Broadway",
-    city: "New York",
-    state: "NY",
-    zip: "11011",
-  },
+  { id: 2, street: "23 Broadway", city: "New York", state: "NY", zip: "11011" },
 ];
 ```
 
@@ -90,21 +87,21 @@ For each model, make a folder with the appropriate file name. For example, for t
 ```js
 [
   {
-    id:1,
+    id: 1,
     name: "Najee",
     role: "member",
     plan: "gold",
     mainLocation: "11101",
   },
   {
-    id:2
+    id: 2,
     name: "Salina",
     role: "staff",
     plan: "staff",
     mainLocation: "11101",
   },
   {
-    id:3
+    id: 3,
     name: "Amandine",
     role: "member",
     plan: "silver",
@@ -143,7 +140,7 @@ For each model, make a folder with the appropriate file name. For example, for t
 ```js
 [
   {
-    id:1,
+    id: 1,
     brand: "Bowflex",
     model: "Bowflexer 4000",
     type: "Extreme Fitness Bench",
@@ -151,7 +148,7 @@ For each model, make a folder with the appropriate file name. For example, for t
     location: 11101,
   },
   {
-    id:2,
+    id: 2,
     brand: "Bowflex",
     model: "Bowflexer 4000",
     type: "Extreme Fitness Bench",
@@ -159,7 +156,7 @@ For each model, make a folder with the appropriate file name. For example, for t
     location: 11101,
   },
   {
-    id:3
+    id: 3,
     brand: "Bowflex",
     model: "Bowflexer 4000",
     type: "Extreme Fitness Bench",
