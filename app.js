@@ -10,7 +10,7 @@ app.use('/locations', locationsController); // mounting controller to path
 
 // machines
 const machinesController = require('./controllers/machines.controller.js');
-app.use('/machines', machinesController);
+app.use('/equipment', machinesController);
 
 // persons
 const personsController = require('./controllers/persons.controller.js');
