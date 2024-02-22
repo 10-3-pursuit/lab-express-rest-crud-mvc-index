@@ -1,10 +1,10 @@
-const express = require('express')
-const machines = express.Router()
-const machinesArr = require("../models/machines.model")
+const express = require('express');
+const machines = express.Router();
+const machinesArr = require("../models/machines.model");
 
 machines.get('/', (req, res) => {
   res.json({ machines: machinesArr })
-})
+});
 
 machines.get('/:id',(req,res)=>{
     const { id } = req.params
@@ -14,5 +14,6 @@ machines.get('/:id',(req,res)=>{
     }else{
         res.json({ message: `Machine with ID ${id} could not be found.` })
     }
-})
-module.exports = machines
+});
+
+module.exports = machines;
