@@ -23,7 +23,14 @@ app.use('/plans', plansController);
 // Routes
 app.get('/',(req, res) => {
     res.json({ 'message':'Hello, world!' });
-})
+});
+
+// 404 page
+app.get('*', (req, res) => {
+    res
+    .status(404)
+    .json({ error: 'Sorry, page not found' })
+});
 
 // Export
 module.exports = app;
