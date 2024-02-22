@@ -12,25 +12,25 @@ const personsArray = require('../models/persons.model');
 
 //create GET route at /locations/people
 locations.get('/persons', (req, res) => {
-    const locationsWithPeople = [];
+  const locationsWithPeople = [];
+  
+  // go through each location
+  locationsArray.forEach(location => {
+      // Filter persons based on mainLocation
+      const peopleAtLocation = personsArray.filter(person => person.mainLocation === location.zip);
 
-    // go through each location
-    locationsArray.forEach(location => {
-        // Filter persons based on mainLocation
-        const peopleAtLocation = personsArray.filter(person => person.mainLocation === location.zip);
-
-        // Create new object for the location with people
-        const locationWithPeople = {
-            street: location.street,
-            city: location.city,
-            state: location.state,
-            zip: location.zip,
-            persons: peopleAtLocation
-        };
-        locationsWithPeople.push(locationWithPeople);
-    });
-    //return new objects array with locations and their people.
-    res.json(locationsWithPeople);
+      // Create new object for the location with people
+      const locationWithPeople = {
+          street: location.street,
+          city: location.city,
+          state: location.state,
+          zip: location.zip,
+          persons: peopleAtLocation
+      };
+      locationsWithPeople.push(locationWithPeople);
+  });
+  //return new objects array with locations and their people.
+  res.json(locationsWithPeople);
 });
 
 //creeate get route to return json data to the client
