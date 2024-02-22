@@ -4,11 +4,14 @@ const app = express()
 
 const locationsController = require('./controllers/locations.controller.js')
 
-const machinesController = require('./controllers/machines.controller.js')
+const equipmentController = require('./controllers/machines.controller.js')
+
+const peopleController = require('./controllers/persons.controller.js')
 
 // MIDDLEWARE FOR CONTROLLERS
 app.use('/locations', locationsController)
-app.use('/equipment', machinesController)
+app.use('/equipment', equipmentController)
+app.use('/people', peopleController)
 
 // ROUTES
 app.get('/', (req, res) => {
