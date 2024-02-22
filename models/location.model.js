@@ -3,7 +3,7 @@ module.exports = [
       street: "45 Davis Street",
       city: "Long Island City",
       state: "NY",
-      zip: "11101",
+      zip: "10011",
     },
     {
       street: "23 Broadway",
