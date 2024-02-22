@@ -3,11 +3,8 @@ const express = require('express')
 const app = express()
 
 const locationsController = require('./controllers/locations.controller.js')
-
 const equipmentController = require('./controllers/machines.controller.js')
-
 const peopleController = require('./controllers/persons.controller.js')
-
 const plansController = require('./controllers/plans.controller.js')
 
 // MIDDLEWARE FOR CONTROLLERS
@@ -23,7 +20,7 @@ app.get('/', (req, res) => {
 
   // 404 PAGE
 app.get('*', (req, res) => {
-  res.json({ error: 'Page not found' })
+  res.json({ message: "Sorry, no page found!" })
 })
 
 
