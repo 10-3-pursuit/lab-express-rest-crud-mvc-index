@@ -17,10 +17,12 @@ const personsController = require('./controllers/persons.controller.js');
 app.use('/persons', personsController);
 
 // plans
+const plansController = require('./controllers/plans.controller.js');
+app.use('/plans', plansController);
 
 // Routes
 app.get('/',(req, res) => {
-    res.json({'message':'Hello, world!'});
+    res.json({ 'message':'Hello, world!' });
 })
 
 // Export
