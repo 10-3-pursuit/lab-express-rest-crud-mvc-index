@@ -18,13 +18,13 @@ module.exports = [
     name: "Amandine",
     role: "member",
     plan: "silver",
-    mainLocation: "10011",
+    mainLocation: "11011",
   },
   {
     id:4,
     name: "Alex",
     role: "member",
-    plan: "silver",
+    plan: "gold",
     mainLocation: "11011",
   },
 ];
