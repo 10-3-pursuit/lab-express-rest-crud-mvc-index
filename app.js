@@ -17,4 +17,8 @@ app.get('/', (req, res) => {
     res.send("Initialized App")
 })
 
+app.get('*', (req, res) => {
+    res.send("Sorry, no page found!")
+})
+
 module.exports = app
