@@ -16,4 +16,14 @@ locations.get('/people', (req, res)=>{
     res.json(modifiedLocations)
 })
 
+locations.get('/:id',(req,res)=>{
+    const {id} = req.params
+    const foundLocation = locationsArray.find(location=> location.id === +id)
+    if(foundLocation){
+        res.json(foundLocation)
+    }else{
+        res.json({message: `Sorry, location with an ID of ${id} could not be found`})
+    }
+})
+
 module.exports = locations
