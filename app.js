@@ -6,7 +6,10 @@ const express = require('express')
 const app = express()
 
 const locationsController = require('./controllers/locations.controller.js')
-app.use('/locations', locationsController)
+app.use('/locations', locationsController);
+
+const peopleController = require('./controllers/people.controller.js')
+app.use('/people',peopleController)
 
 // ROUTES
 app.get('/', (req, res) => {
