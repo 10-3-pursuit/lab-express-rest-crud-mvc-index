@@ -3,7 +3,11 @@ const locations = express.Router(); // kind of like browser router, routes, and 
 const locationsArr = require("../models/locations.model");
 
 locations.get('/', (req, res) => {
-    res.json({ locations: locationsArr })
+    res
+    .status(200)
+    .json({ locations: locationsArr })
 });
+
+
 
 module.exports = locations;

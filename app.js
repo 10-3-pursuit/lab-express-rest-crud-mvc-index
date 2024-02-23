@@ -26,7 +26,7 @@ app.get('/',(req, res) => {
 });
 
 // 404 page
-app.get('*', (req, res) => {
+app.get('*', (req, res) => { // wildcard symbol * is catchall route with express.js
     res
     .status(404)
     .json({ error: 'Sorry, page not found' })
