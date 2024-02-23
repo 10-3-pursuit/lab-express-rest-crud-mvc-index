@@ -1,4 +1,4 @@
-[
+export default [
   {
     id: 1,
     street: "45 Davis Street",
