@@ -11,6 +11,6 @@ module.exports = [
     street: "23 Broadway",
     city: "New York",
     state: "NY",
-    zip: "11011",
+    zip: "10011",
   },
 ];
