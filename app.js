@@ -9,7 +9,10 @@ const locationsController = require('./controllers/locations.controller.js')
 app.use('/locations', locationsController);
 
 const peopleController = require('./controllers/people.controller.js')
-app.use('/people',peopleController)
+app.use('/people',peopleController);
+
+const plansController = require('./controllers/plans.controller.js')
+app.use('/plans', plansController);
 
 // ROUTES
 app.get('/', (req, res) => {
