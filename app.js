@@ -14,6 +14,9 @@ app.use('/people',peopleController);
 const plansController = require('./controllers/plans.controller.js')
 app.use('/plans', plansController);
 
+const machinesController = require('./controllers/machines.controller.js')
+app.use('/equipment', machinesController);
+
 // ROUTES
 app.get('/', (req, res) => {
   res.send('Hello, world!')
