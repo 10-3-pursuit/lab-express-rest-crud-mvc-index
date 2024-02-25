@@ -23,3 +23,5 @@ locations.get('/persons', (req, res) => {
 })
 
 module.exports = locations;
+
+// Note: if using an accumulator and accumulator.push(matchingPersons) in line 20 instead, it pushes length of array instead of values - why? due to the nature of the Array.prototype.push method in JavaScript. The push method adds one or more elements to the end of an array and returns the new length of the array, not the array itself. This is why when you use push within a map or any such operation where you expect to insert the array itself but see only numbers (the array's new length after each push), you're actually seeing the return value of the push method.
