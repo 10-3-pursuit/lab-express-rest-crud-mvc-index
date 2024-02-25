@@ -21,7 +21,7 @@ locations.get('/persons', (req, res) => {
     // the persons array must have persons objects
     // the persons objects contains mainLocation key where value matches zipcode value in locations array of obj
     let result = locationsArr.map(locationObj => {
-        let matchingPersons = personsArr.filter(person => person.mainlocation === locationObj.zip)
+        let matchingPersons = personsArr.filter(person => person.mainLocation === locationObj.zip)
         return {...locationObj, person: matchingPersons}
         //spread op to not mutate original
     }); // need to add persons array to each object based on zipcode and main location keys and values so .filter
