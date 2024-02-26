@@ -5,7 +5,7 @@ const plans = express.Router();
 const plansData = require('../models/plan.model')
 
 plans.get("/", (req, res) => {
-    res.json({machines: plansData})
+    res.json({plans: plansData})
 })
 //looking for one plan by ID
 plans.get("/:id", (req, res) => {
